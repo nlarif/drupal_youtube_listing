@@ -1,0 +1,14 @@
+youtube_listing.content:
+  path: '/videos'
+  defaults:
+    _controller: '\Drupal\youtube_listing\Controller\YoutubeListingController::content'
+    _title: 'Vidéos du club depuis Youtube'
+  requirements:
+    _permission: 'access content'
+youtube_listing.initToken:
+  path: '/gettoken'
+  defaults:
+    _controller: '\Drupal\youtube_listing\Controller\YoutubeListingController::initToken'
+    _title: 'Récupération du token pour Youtube'
+  requirements:
+    _permission: 'access content'
